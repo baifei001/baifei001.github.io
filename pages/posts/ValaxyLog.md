@@ -9,6 +9,7 @@ tags:
   - 笔记
   - 部署
 top: 2
+cover: https://cdn.yuumi.link/images/valaxy/valaxy.png
 ---
 
 ## 下面是Valaxy使用日志

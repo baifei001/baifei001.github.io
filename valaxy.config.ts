@@ -21,7 +21,7 @@ export default defineValaxyConfig<UserThemeConfig>({
   themeConfig: {
     banner: {
       enable: true,
-      title: '你好世界',
+      title: '你好世界',    //加载显示字样
     },
     pages: [
       {
