@@ -5,7 +5,7 @@ export default defineSiteConfig({
   favicon: "http://imgpub.hhhhhy.kim/57/可莉.png",	// 网页图标链接
   lang: 'zh-CN',  //默认语言
   title: "-BaiFei Blog  I人小站",  //网站标题
-  subtitle: '',//网站副标题
+  subtitle: '私はあなたが好きです',//网站副标题
   author: {
     name: '',//博主名称
     avatar: "http://imgpub.hhhhhy.kim/57/微信图片_20240313214328.jpg",	//头像链接
