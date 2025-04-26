@@ -1,7 +1,7 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: '',  //你网站的URL
+  url: 'https://baifei001.github.io/',  //你网站的URL
   favicon: "",	// 网页图标链接
   lang: 'zh-CN',  //默认语言
   title: "",  //网站标题
@@ -13,7 +13,7 @@ export default defineSiteConfig({
       emoji: '💛'	// 头像旁边的emoji
     },
   },
-  
+
   description: '',  //简介
   social: [
     {
