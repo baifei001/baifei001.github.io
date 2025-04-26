@@ -2,9 +2,9 @@ import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
   url: 'https://baifei001.github.io/',  //你网站的URL
-  favicon: "",	// 网页图标链接
+  favicon: "http://imgpub.hhhhhy.kim/57/可莉.png",	// 网页图标链接
   lang: 'zh-CN',  //默认语言
-  title: "",  //网站标题
+  title: "-BaiFei Blog  I人小站",  //网站标题
   subtitle: '',//网站副标题
   author: {
     name: '',//博主名称
