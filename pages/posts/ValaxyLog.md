@@ -14,6 +14,9 @@ cover: https://cdn.yuumi.link/images/valaxy/valaxy.png
 
 ## 下面是Valaxy使用日志
 
+### 2025/4/27 23:59
+  新增评论区功能，使用Twikoo实现，暂时未配置图片插入功能(待后续黑鹰图床密码重置后启用)
+
 ### 2025/4/26 21:39
 自定义域名并启用Https
   >关于自定义域名
