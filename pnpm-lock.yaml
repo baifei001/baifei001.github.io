@@ -11,6 +11,9 @@ importers:
       valaxy:
         specifier: 0.23.2
         version: 0.23.2(@babel/parser@7.27.0)(@nuxt/kit@3.16.2)(@types/markdown-it@14.1.2)(@types/node@22.15.2)(@vue/compiler-dom@3.5.13)(axios@1.9.0)(eslint@9.25.1(jiti@2.4.2))(postcss@8.5.3)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+      valaxy-addon-twikoo:
+        specifier: ^0.0.3
+        version: 0.0.3(valaxy@0.23.2(@babel/parser@7.27.0)(@nuxt/kit@3.16.2)(@types/markdown-it@14.1.2)(@types/node@22.15.2)(@vue/compiler-dom@3.5.13)(axios@1.9.0)(eslint@9.25.1(jiti@2.4.2))(postcss@8.5.3)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
       valaxy-theme-yun:
         specifier: 0.23.2
         version: 0.23.2(vue@3.5.13(typescript@5.8.3))
@@ -3336,6 +3339,11 @@ packages:
   uuid@11.1.0:
     resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
     hasBin: true
+
+  valaxy-addon-twikoo@0.0.3:
+    resolution: {integrity: sha512-8ISPqSF3uto8jCceaDuGzeq1utJuH3oJ3mqtz9h1lQhXkP3jwReh8Sa3bnfhHlcfCUCoNK2E5dj8CNK2tVgHpg==}
+    peerDependencies:
+      valaxy: latest
 
   valaxy-theme-yun@0.23.2:
     resolution: {integrity: sha512-1p2Rujc/LscXJWwDuo1haCBaJFBGZyewgVDJNq8Go5YJ5zAClEW6rU5h5EOK/48B5tmcOtWFX+aUfadraz51wg==}
@@ -7248,6 +7256,10 @@ snapshots:
       punycode: 2.3.1
 
   uuid@11.1.0: {}
+
+  valaxy-addon-twikoo@0.0.3(valaxy@0.23.2(@babel/parser@7.27.0)(@nuxt/kit@3.16.2)(@types/markdown-it@14.1.2)(@types/node@22.15.2)(@vue/compiler-dom@3.5.13)(axios@1.9.0)(eslint@9.25.1(jiti@2.4.2))(postcss@8.5.3)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)):
+    dependencies:
+      valaxy: 0.23.2(@babel/parser@7.27.0)(@nuxt/kit@3.16.2)(@types/markdown-it@14.1.2)(@types/node@22.15.2)(@vue/compiler-dom@3.5.13)(axios@1.9.0)(eslint@9.25.1(jiti@2.4.2))(postcss@8.5.3)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
 
   valaxy-theme-yun@0.23.2(vue@3.5.13(typescript@5.8.3)):
     dependencies:
