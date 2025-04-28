@@ -15,13 +15,23 @@ cover: https://cdn.yuumi.link/images/valaxy/valaxy.png
 ## 下面是Valaxy使用日志
 
 ### 2025/4/27 23:59
+  - 评论区新增图片插入功能(幸好黑鹰哥的图床用的是兰空图床)
+  - 只需要配置下<span class="color-blue">IMAGE_CDN</span>为<span class="color-blue">lskypro</span>
+    然后把<span class="color-blue">IMAGE_CDN_URL</span>填写上图床网站的首页网址(这里再次感谢黑鹰)
+    之后就是需要通过任意请求工具，例如Postman去发送下面的请求获取对应的token
+    具体教程可以看[杜老师说图床](https://dusays.com/454/)
+  - 获取到的 token 格式应为<span class="color-blue">`1|1bJbwlqBfnggmOMEZqXT5XusaIwqiZjCDs7r1Ob5`</span>
+  - 之后就是将token填入到<span class="color-blue">IMAGE_CDN_TOKEN</span>就大功告成啦！！
+
+
+### 2025/4/27 23:59
   新增评论区功能，使用Twikoo实现，暂时未配置图片插入功能(待后续黑鹰图床密码重置后启用)
 
 ### 2025/4/26 21:39
 自定义域名并启用Https
   >关于自定义域名
-  - 1、自定义域名首先需要去服务商购买域名，购买之后在控制台解析，设置域名前缀，然后设置记录类型为：<span style="color: #ff4757">CNAME</span>
-    并将记录值设置为之前部署网站的地址<span style="color:rgb(47, 60, 160)">GitHub用户名.github.io</span>
+  - 1、自定义域名首先需要去服务商购买域名，购买之后在控制台解析，设置域名前缀，然后设置记录类型为：<span class="text-[#ff4757]">CNAME</span>
+    并将记录值设置为之前部署网站的地址<span class="text-[rgba(47_60_160)]">GitHub用户名.github.io</span>
 
   - 2、然后修改仓库Settings->Page->Custom domain下面的域名配置，填写自己设置的域名点击save保存，这样就成功啦！
 
@@ -36,7 +46,7 @@ cover: https://cdn.yuumi.link/images/valaxy/valaxy.png
   - 1、首先Valaxy部署的话和其他的框架一样的是，都是需要新建一个GitHub用户名.github.io的仓库
 
   - 2、其次，Valaxy和其他框架不一样的是，建好仓库之后，需要去修改仓库的Settings->Actions->General->里面的Workflow permissions选项，
-    选项默认是<span style="color: #ff4757">Read repository contents and packages permissions</span>，我们需要将它修改为<span style="color:rgb(47, 60, 160)">Read and write permissions</span> 勾选后保存。
+    选项默认是<span class="text-[#ff4757]">Read repository contents and packages permissions</span>，我们需要将它修改为<span class="text-[rgba(47_60_160)]">Read and write permissions</span> 勾选后保存。
 
   - 3、随后就是上传本地文件到仓库，这部分就不多赘述了。(另外是先修改再上传代码，还是先上传代码再修改，我忘记了qwq，可自行尝试)
 
