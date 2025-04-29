@@ -4,6 +4,7 @@ import { defineValaxyConfig } from 'valaxy'
 //这两行均需要安装对应的插件，详情请查看Valaxy开发文档
 import { addonTwikoo } from 'valaxy-addon-twikoo'  //接入Twikoo评论系统
 import { addonMeting } from 'valaxy-addon-meting'  //添加Meting音乐播放器
+// import { addonLive2d } from 'valaxy-addon-live2d'  //添加看板娘
 // add icons what you will need
 
 const safelist = [
@@ -99,6 +100,27 @@ export default defineValaxyConfig<UserThemeConfig>({
         type: 'playlist',
         lyricHidden: true
       },
-    })
+    }),
+    // addonLive2d({
+    //   enableLive2D: ['XiaoYun', 'Tia', 'Pio'],
+    //   live2DCollection: {
+    //     XiaoYun: {
+    //       message: '来自云游君的小云 ~',
+    //       models: ['https://cdn.jsdelivr.net/npm/@yunyoujun/live2d@latest/小云.model3.json'],
+    //     },
+    //     // https://github.com/fghrsh/live2d_api
+    //     Tia: {
+    //       message: '来自 Potion Maker 的 Tia 酱 ~',
+    //       models: 'https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/model/Potion-Maker/Tia/index.json',
+    //       textures: 'https://api.github.com/repos/fghrsh/live2d_api/contents/model/Potion-Maker/Tia/textures',
+    //     },
+    //     Pio: {
+    //       message: '来自 Potion Maker 的 Pio 酱 ~',
+    //       models: 'https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/model/Potion-Maker/Pio/index.json',
+    //       textures: 'https://api.github.com/repos/fghrsh/live2d_api/contents/model/Potion-Maker/Pio/textures',
+    //     },
+    //   },
+    //   skipHello: false
+    // })
   ],
 })

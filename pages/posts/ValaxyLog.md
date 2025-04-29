@@ -15,13 +15,18 @@ cover: http://imgpub.hhhhhy.kim/57/valaxyLo.png
 
 ## 下面是Valaxy使用日志
 
+### 2025/4/29 23:46
+  > 使用Cloudflare CDN加速网站
+
+  - 具体过程就不多赘述，教程可以看[如何给你的网站套上Cloudflare（以阿里云为例）](https://blog.csdn.net/zhyl8157121/article/details/100551592)
+
 ### 2025/4/29 21:42
   > 新增全局音乐播放器
   - 使用方式很简单，首先需要安装依赖
-  - 
+  -
   ```shell
   pnpm add valaxy-addon-meting
-  ``` 
+  ```
 
   加载插件
 
