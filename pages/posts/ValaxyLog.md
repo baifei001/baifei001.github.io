@@ -15,6 +15,14 @@ cover: http://imgpub.hhhhhy.kim/57/valaxyLo.png
 
 ## 下面是Valaxy使用日志
 
+### 2025/4/30 01:21
+  > 关于套CDN后访问博客报 `您重定向的次数过多`这个问题
+  - 具体原因是服务器对于 CloudFlare 的响应会被加密，从而访问失败并不断重复发送相同请求。
+  
+  -  解决方法就是调整CloudFlare SSL/TLS 设置改为 完全（Full） 或 完全严格Full (strict) 模式（前者不验证服务器证书，后者则会）
+  -  [参考网站](https://chenyu.me/2126.html)
+
+
 ### 2025/4/30 00:52
   > 网站首页页脚插入不蒜子统计
   - 操作很简单，具体操作可以查阅[官方文档](https://valaxy.site/guide/custom/components)
