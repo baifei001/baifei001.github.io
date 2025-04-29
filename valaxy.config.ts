@@ -3,7 +3,7 @@ import { defineValaxyConfig } from 'valaxy'
 
 //这两行均需要安装对应的插件，详情请查看Valaxy开发文档
 import { addonTwikoo } from 'valaxy-addon-twikoo'  //接入Twikoo评论系统
-//import { addonMeting } from 'valaxy-addon-meting'  //添加Meting音乐播放器
+import { addonMeting } from 'valaxy-addon-meting'  //添加Meting音乐播放器
 // add icons what you will need
 
 const safelist = [
@@ -90,15 +90,15 @@ export default defineValaxyConfig<UserThemeConfig>({
       envId: 'https://baifeiblog.netlify.app/.netlify/functions/twikoo', // 自建服务地址
     }),
     //音乐播放器，如需要配置，请查看https://github.com/metowolf/MetingJS
-    // addonMeting({
-    //   global: true,
-    //   /** @see https://github.com/metowolf/MetingJS */
-    //   props: {
-    //     id: '',
-    //     server: '',
-    //     type: '',
-    //     mode: '',
-    //   },
-    // })
+    addonMeting({
+      global: true,
+      /** @see https://github.com/metowolf/MetingJS */
+      props: {
+        id: '6623710444',
+        server: 'netease',
+        type: 'playlist',
+        lyricHidden: true
+      },
+    })
   ],
 })

@@ -9,10 +9,48 @@ tags:
   - 笔记
   - 部署
 top: 2
-cover: https://cdn.yuumi.link/images/valaxy/valaxy.png
+aplayer: true
+cover: http://imgpub.hhhhhy.kim/57/valaxyLo.png
 ---
 
 ## 下面是Valaxy使用日志
+
+### 2025/4/29 21:42
+  > 新增全局音乐播放器
+  - 使用方式很简单，首先需要安装依赖
+  - 
+  ```shell
+  pnpm add valaxy-addon-meting
+  ``` 
+
+  加载插件
+
+```typescript [valaxy.config.ts]
+import { defineValaxyConfig } from 'valaxy'
+import { addonMeting } from 'valaxy-addon-meting'  //添加Meting音乐播放器
+
+export default defineValaxyConfig({
+  themeConfig: {
+  // ...
+  }
+  addons: [
+    //音乐播放器，如需要配置，请查看https://github.com/metowolf/MetingJS
+    addonMeting({
+      global: true,
+      /** @see https://github.com/metowolf/MetingJS */
+      props: {
+        id: '',   // 资源唯一标识符（填对应平台数字ID）
+        server: '',  //指定音乐平台 （netease-网易云   tencent-QQ音乐）
+        type: '',   //资源类型(song-单曲  playlist-歌单  search-搜索模式)
+        lyricHidden: true   // 确定 APlayer 界面在加载完成后是否应立即可见
+      },
+    })
+  ],
+})
+```
+
+更多详细配置请查看[valaxy-addon-meting](https://github.com/YunYouJun/valaxy/tree/main/packages/valaxy-addon-meting)
+
 
 ### 2025/4/27 23:59
   - 评论区新增图片插入功能(幸好黑鹰哥的图床用的是兰空图床)
