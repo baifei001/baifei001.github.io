@@ -2,13 +2,13 @@ import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
   url: 'https://blog.baifei.xin/',  //你网站的URL
-  favicon: "http://imgpub.hhhhhy.kim/57/可莉.png",	// 网页图标链接
+  favicon: "https://imgpub.hhhhhy.kim/57/可莉.png",	// 网页图标链接
   lang: 'zh-CN',  //默认语言
   title: "-BaiFei Blog  I人小站",  //网站标题
   subtitle: '私はあなたが好きです',//网站副标题
   author: {
     name: 'BaiFei',//博主名称
-    avatar: "http://imgpub.hhhhhy.kim/57/微信图片_20240313214328.jpg",	//头像链接
+    avatar: "https://imgpub.hhhhhy.kim/57/微信图片_20240313214328.jpg",	//头像链接
     status: {
       emoji: '💛'	// 头像旁边的emoji
     },
