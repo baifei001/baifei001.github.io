@@ -11,6 +11,9 @@ importers:
       valaxy:
         specifier: 0.23.2
         version: 0.23.2(@babel/parser@7.27.0)(@nuxt/kit@3.16.2)(@types/markdown-it@14.1.2)(@types/node@22.15.2)(@vue/compiler-dom@3.5.13)(axios@1.9.0)(eslint@9.25.1(jiti@2.4.2))(postcss@8.5.3)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+      valaxy-addon-components:
+        specifier: ^0.1.0
+        version: 0.1.0
       valaxy-addon-live2d:
         specifier: ^0.3.0
         version: 0.3.0
@@ -3575,6 +3578,9 @@ packages:
   uuid@11.1.0:
     resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
     hasBin: true
+
+  valaxy-addon-components@0.1.0:
+    resolution: {integrity: sha512-7uCJgUgc2JHISmz/UDQlhBqGSNW4QKmkiRlcwj5WhjhScC/KktK8JtADeKh6FCaAJHbjShovHB/9UPVtnTwORg==}
 
   valaxy-addon-live2d@0.3.0:
     resolution: {integrity: sha512-gSTbVG6eq1xUdxguZUswgCEAmDNDh8awBEFPcj9v9qfWEoPLHa74fc+T/ShRter4WcTbrhEfBY3h7Rs0REL8RQ==}
@@ -7742,6 +7748,8 @@ snapshots:
       qs: 6.14.0
 
   uuid@11.1.0: {}
+
+  valaxy-addon-components@0.1.0: {}
 
   valaxy-addon-live2d@0.3.0:
     dependencies:

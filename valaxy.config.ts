@@ -5,6 +5,8 @@ import { defineValaxyConfig } from 'valaxy'
 import { addonTwikoo } from 'valaxy-addon-twikoo'  //接入Twikoo评论系统
 import { addonMeting } from 'valaxy-addon-meting'  //添加Meting音乐播放器
 // import { addonLive2d } from 'valaxy-addon-live2d'  //添加看板娘
+import { addonComponents } from 'valaxy-addon-components'  // 添加通用组件
+
 // add icons what you will need
 
 const safelist = [
@@ -26,9 +28,9 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
     pages: [
       {
-        name: '网络世界的小伙伴们',
+        name: '友链',
         url: '/links/',
-        icon: 'i-ri-open-arm-line',  //这里的icon是Valaxy自带的图标，你可以在https://icones.js.org/找到你需要的图标，然后复制到icon字段中
+        icon: 'i-ri-attachment-2',  //这里的icon是Valaxy自带的图标，你可以在https://icones.js.org/找到你需要的图标，然后复制到icon字段中
         //这里的ico我踩过坑，所以多说两句，这里的ICO复制名字即可，但是你需要在前面添加i-ri-【ICO名字】
         color: 'hotpink',
       },
@@ -63,7 +65,7 @@ export default defineValaxyConfig<UserThemeConfig>({
         icp: '',  //这里是备案号，如果你不需要备案号，可以将上面的enable改为false即可
       },
     },
-    
+
     //背景图,这里为我自己添加的字段
     bg_image: {
       enable: true,  //这里是背景图的设置，你可以设置白日模式和夜间模式的背景图，如果你不需要背景图，可以将上面的enable改为false即可
@@ -72,7 +74,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     },
 
      //鼠标点击烟花特效
-    fireworks: {  
+    fireworks: {
       enable: true,
       colors: ['#FFE57D', '#FFCD88', '#E6F4AD']
     },
@@ -87,7 +89,8 @@ export default defineValaxyConfig<UserThemeConfig>({
   },
   // 设置 valaxy-addon-twikoo 配置项
   addons: [
-    addonTwikoo({ 
+    addonComponents(),
+    addonTwikoo({
       envId: 'https://baifeiblog.netlify.app/.netlify/functions/twikoo', // 自建服务地址
     }),
     //音乐播放器，如需要配置，请查看https://github.com/metowolf/MetingJS
