@@ -15,6 +15,12 @@ cover: http://imgpub.hhhhhy.kim/57/valaxyLo.png
 
 ## 下面是Valaxy使用日志
 
+### 2025/1/11 19:27
+  好久没写博客，把项目clone下来后发现评论区失效了，花费时间查询了一下，问题是因为太久没有使用导致twikoo的自建的mongodb数据库失效了</br>
+  需要重新进到[mongodb官方网站](https://cloud.mongodb.com/)重新构建一下,开始还以为需要重新弄一个</br>
+  （不过悲催的事，之前建数据库的教程找不到了，现在完全不记得是怎么搞的去了，全英文看不懂....早知道之前就写到博客里面了...）
+
+
 ### 2025/4/30 22:50
 
   添加~~友链Links文件~~魔法契约使者档案(确信)
@@ -22,7 +28,7 @@ cover: http://imgpub.hhhhhy.kim/57/valaxyLo.png
 ### 2025/4/30 01:21
   > 关于套CDN后访问博客报 `您重定向的次数过多`这个问题
   - 具体原因是服务器对于 CloudFlare 的响应会被加密，从而访问失败并不断重复发送相同请求。
-  
+
   -  解决方法就是调整CloudFlare SSL/TLS 设置改为 完全（Full） 或 完全严格Full (strict) 模式（前者不验证服务器证书，后者则会）
   -  [参考网站](https://chenyu.me/2126.html)
 
