@@ -32,6 +32,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
     '/posts/idea-plugin': RouteRecordInfo<'/posts/idea-plugin', '/posts/idea-plugin', Record<never, never>, Record<never, never>>,
     '/posts/in18': RouteRecordInfo<'/posts/in18', '/posts/in18', Record<never, never>, Record<never, never>>,
+    '/posts/resume-project': RouteRecordInfo<'/posts/resume-project', '/posts/resume-project', Record<never, never>, Record<never, never>>,
     '/posts/ValaxyLog': RouteRecordInfo<'/posts/ValaxyLog', '/posts/ValaxyLog', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
