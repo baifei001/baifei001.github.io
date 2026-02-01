@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>-BaiFei Blog-</title>
+        <link>https://blog.baifei.xin/</link>
+        <description>会有人帮我砍断婚车的车轴吗？</description>
+        <lastBuildDate>Sun, 01 Feb 2026 16:12:10 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>-BaiFei Blog-</title>
+            <url>https://imgpub.hhhhhy.kim/57/favicon.jpg</url>
+            <link>https://blog.baifei.xin/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2026 © BaiFei</copyright>
+        <atom:link href="https://blog.baifei.xin/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Flutter学习]]></title>
+            <link>https://blog.baifei.xin/posts/Flutter</link>
+            <guid>https://blog.baifei.xin/posts/Flutter</guid>
+            <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Flutter学习</h2>
+<h4>为了防止自己之后对Flutter的一些难以记忆的地方忘记则开始记录一下学习的东西</h4>
+<h3>2026/2/1 22:18</h3>
+<h4>Flutter的相关组件学</h4>
+<br/><p>访问 <a href="https://blog.baifei.xin/posts/Flutter" target="_blank">https://blog.baifei.xin/posts/Flutter</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (BaiFei)</author>
+        </item>
+        <item>
+            <title><![CDATA[IDEA插件开发 - 基础环境搭建]]></title>
+            <link>https://blog.baifei.xin/posts/idea-plugin</link>
+            <guid>https://blog.baifei.xin/posts/idea-plugin</guid>
+            <pubDate>Mon, 05 May 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>插件开发步骤</h2>
+<h3>1、创建基础项目结构</h3>
+<p><img src="https://imgpub.hhhhhy.kim/57/plugin01.png" alt="plugin01.png"></p>
+<ul>
+<li>由于我</li>
+</ul>
+<br/><p>访问 <a href="https://blog.baifei.xin/posts/idea-plugin" target="_blank">https://blog.baifei.xin/posts/idea-plugin</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (BaiFei)</author>
+        </item>
+        <item>
+            <title><![CDATA[Valaxy使用日志]]></title>
+            <link>https://blog.baifei.xin/posts/ValaxyLog</link>
+            <guid>https://blog.baifei.xin/posts/ValaxyLog</guid>
+            <pubDate>Sat, 26 Apr 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>下面是Valaxy使用日志</h2>
+<h3>2025/1/11 19:27</h3>
+<p>好久没写博客，把项目clone下来后发现评论区失效了，花费时间查询了一下，问题是因为太久没有使用导致twikoo的自建</p>
+<br/><p>访问 <a href="https://blog.baifei.xin/posts/ValaxyLog" target="_blank">https://blog.baifei.xin/posts/ValaxyLog</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (BaiFei)</author>
+        </item>
+        <item>
+            <title><![CDATA[Hello, Valaxy!]]></title>
+            <link>https://blog.baifei.xin/posts/hello-valaxy</link>
+            <guid>https://blog.baifei.xin/posts/hello-valaxy</guid>
+            <pubDate>Sat, 26 Apr 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Hello, Valaxy!</h2>
+<p>Hello, Valaxy!</p>
+<br/><p>访问 <a href="https://blog.baifei.xin/posts/hello-valaxy" target="_blank">https://blog.baifei.xin/posts/hello-valaxy</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (BaiFei)</author>
+        </item>
+        <item>
+            <title><![CDATA[简历项目开发日记]]></title>
+            <link>https://blog.baifei.xin/posts/resume-project</link>
+            <guid>https://blog.baifei.xin/posts/resume-project</guid>
+            <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3></h3>
+<br/><p>访问 <a href="https://blog.baifei.xin/posts/resume-project" target="_blank">https://blog.baifei.xin/posts/resume-project</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (BaiFei)</author>
+        </item>
+        <item>
+            <title><![CDATA[In18国际化]]></title>
+            <link>https://blog.baifei.xin/posts/in18</link>
+            <guid>https://blog.baifei.xin/posts/in18</guid>
+            <pubDate>Tue, 14 Jan 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>In18 国际化</h2>
+<h3>1、首先需要安装核心依赖，我使用的是pnpm所以命令是下面这样</h3>
+<pre><code class="language-cmd"> pnpm add vue-i18n@next
+</code></pre>
+<h3>2、安装后就需要</h3>
+<br/><p>访问 <a href="https://blog.baifei.xin/posts/in18" target="_blank">https://blog.baifei.xin/posts/in18</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (BaiFei)</author>
+        </item>
+    </channel>
+</rss>
