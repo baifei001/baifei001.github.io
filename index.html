@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://imgpub.hhhhhy.kim/57/可莉.png">
+    <script>
+    ;(function () {
+      const prefersDark =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+    </script>
+  <style type="text/css">
+    :root { color-scheme: light dark; --va-c-bg: #fff; }
+    html.dark { --va-c-bg: #000; }
+    html { background-color: var(--va-c-bg); }
+  </style>
+    <script>
+    const locale = localStorage.getItem('valaxy-locale') || 'zh-CN';
+    document.documentElement.setAttribute('lang', locale);
+    </script>
+    
+  <script type="module" crossorigin src="/assets/app.CdZNC7n9.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/framework.WJUbbUw9.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-router.BJpCmTUi.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/dayjs.Byk5cVHE.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/vue-i18n.BN0A_8t-.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/@vueuse/motion.jPwmrH06.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/pinia.B0_ezrN5.js">
+  <link rel="modulepreload" crossorigin href="/assets/chunks/nprogress.DC138DpO.js">
+  <link rel="stylesheet" crossorigin href="/assets/app.C-7nVR5Y.css">
+</head>
+<body>
+  <div id="app"></div>
+  
+</body>
+</html>
