@@ -3,38 +3,46 @@ name: GitHub Pages
 on:
   push:
     branches:
-      # The branch where the project source code resides
-      # 项目源代码所在的分支
       - master
       - main
       - valaxy
 
+# This workflow deploys by pushing build output to the `gh-pages` branch.
+permissions:
+  contents: write
+
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        node-version: [lts/*]
-        os: [ubuntu-latest]
-      fail-fast: false
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: https://registry.npmjs.org/
+          node-version: lts/*
+          cache: pnpm
 
-      - name: 📦 Install Dependencies
-        run: npm i
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+          run_install: false
 
-      - name: 🌌 Build Valaxy Blog
-        run: npm run build
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
-      - name: 🪤 Deploy to GitHub Pages
+      - name: Build Valaxy blog
+        run: pnpm run build
+
+      # Prevent deploying a broken/empty site (which would overwrite `gh-pages`).
+      - name: Verify build output
+        run: |
+          ls -la dist
+          test -f dist/index.html
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
