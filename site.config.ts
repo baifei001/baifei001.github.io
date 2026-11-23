@@ -1,7 +1,7 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: 'https://blog.baifei.xin/',  //你网站的URL
+  url: 'https://baifei.cc.cd/',  //你网站的URL
   favicon: "https://imgpub.hhhhhy.kim/57/可莉.png",	// 网页图标链接
   lang: 'zh-CN',  //默认语言
   title: "-BaiFei Blog-",  //网站标题
